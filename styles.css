@@ -136,7 +136,7 @@ input[type="file"] {
     position: fixed; /* Fixierte Positionierung */
     bottom: 10px; /* Abstand vom unteren Rand */
     left: 10px; /* Abstand vom linken Rand */
-    width: 100px; /* Breite des Logos */
+    width: 50px; /* Breite des Logos */
     height: auto; /* Automatische Höhe basierend auf der Breite */
     z-index: 1000; /* Sicherstellen, dass es über anderen Elementen liegt */
     opacity: 0.8; /* Leicht transparent */
