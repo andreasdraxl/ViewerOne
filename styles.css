@@ -1,0 +1,149 @@
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Optionsmenu */
+.options-menu {
+    position: fixed;
+    min-width: unset;
+    top: 5px;
+    right: 5px;
+    max-height: calc(100vh - 10px);
+}
+
+.phone-menu-toggler {
+    visibility: hidden;
+}
+
+/* Mobile spezifische Stile */
+@media (max-width: 480px) {
+    .options-menu {
+        visibility: hidden;
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .options-menu-visible {
+        visibility: visible;
+    }
+
+    .phone-menu-toggler {
+        visibility: visible;
+        position: fixed;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+/* Gemeinsames Layout für die Panels */
+.control-panel {
+    position: absolute;
+    max-width: 300px;
+    padding: 8px;
+    background: black !important; /* Schwarzer Hintergrund */
+    color: white !important; /* Weißer Text */
+    border: 1px solid #ffffff;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.control-panel * {
+    color: white !important; /* Erzwingt weiße Schrift für alle Inhalte der Panels */
+}
+
+/* Anpassungen für @thatopen/ui-Komponenten */
+bim-panel {
+    background: black !important; /* Schwarzer Hintergrund */
+    color: white !important; /* Weißer Text */
+}
+
+bim-panel-section {
+    background: black !important; /* Schwarzer Hintergrund */
+    color: white !important; /* Weißer Text */
+}
+
+bim-panel-section h1, 
+bim-panel-section h2, 
+bim-panel-section h3, 
+bim-panel-section h4, 
+bim-panel-section h5, 
+bim-panel-section h6, 
+bim-panel-section label, 
+bim-panel-section span {
+    color: white !important; /* Überschriften und Labels in Weiß */
+}
+
+/* Buttons */
+bim-button {
+    background: white !important; /* Weißer Hintergrund */
+    color: black !important; /* Schwarzer Text */
+    border: 1px solid #ccc !important;
+    border-radius: 1px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+bim-button:hover {
+    background: #f5f5f5 !important;
+}
+
+/* Checkboxen */
+bim-checkbox {
+    --checkbox-background: white !important; /* Weißes Checkbox-Hintergrund */
+    --checkbox-border: 1px solid #ccc !important;
+    --checkbox-checked-color: black !important;
+    color: white !important; /* Text bleibt weiß */
+}
+
+bim-checkbox label {
+    color: white !important; /* Label der Checkbox in Weiß */
+}
+
+/* Inputs und Labels */
+bim-color-input label,
+bim-number-input label,
+input[type="file"] {
+    color: white !important; /* Inputs und ihre Labels in Weiß */
+}
+
+/* Positionierung für den IFC Loader (rechts oben) */
+#ifc-loader {
+    top: 0px;
+    right: 0px;
+}
+
+/* Positionierung für die Grid Controls (links oben) */
+#grid-controls {
+    top: 0px;
+    left: 0px;
+}
+/* Logo-Stile */
+.logo {
+    position: fixed; /* Fixierte Positionierung */
+    bottom: 10px; /* Abstand vom unteren Rand */
+    left: 10px; /* Abstand vom linken Rand */
+    width: 100px; /* Breite des Logos */
+    height: auto; /* Automatische Höhe basierend auf der Breite */
+    z-index: 1000; /* Sicherstellen, dass es über anderen Elementen liegt */
+    opacity: 0.8; /* Leicht transparent */
+    transition: opacity 0.3s ease; /* Smooth Hover-Effekt */
+}
+
+.logo:hover {
+    opacity: 1; /* Volle Sichtbarkeit bei Hover */
+}
+
