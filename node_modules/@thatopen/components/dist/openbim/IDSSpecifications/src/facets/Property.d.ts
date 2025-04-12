@@ -16,7 +16,7 @@ export declare class IDSProperty extends IDSFacet {
     test(entities: FRAGS.IfcProperties, model: FRAGS.FragmentsGroup): Promise<IDSCheckResult[]>;
     private getItemsAttrName;
     private getValueKey;
-    private getPsetProps;
+    private simplifyPset;
     private getTypePsets;
     private getPsets;
     private evalValue;
